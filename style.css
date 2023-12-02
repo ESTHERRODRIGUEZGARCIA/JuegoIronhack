@@ -24,6 +24,8 @@ html, body {
     border-radius: 10px;
     background-color: #84f8b4;
 
+}
+
 #mazeContainer #mazeCanvas {
     margin: 0;
     display: block;
