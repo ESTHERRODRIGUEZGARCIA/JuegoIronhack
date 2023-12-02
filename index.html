@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laberinto</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="page">
+    <div id="Message-Container">
+      <div id="message">
+        <h1>BIENVENIDO </h1>
+        <p>JUEGO DEL LABERINTO</p>
+        <p>El objetivo del juego es que la bola llegue a la meta.</p>
+        <p>Para mover la bola utiliza las flechas del teclado.</p>
+        <p>Para comenzar selecciona la dificultad y presiona el botón comenzar.</p>
+        <p>¡Buena suerte!</p>
+
+        <p>RECUERDA:</p>
+        <p>Tienes la opción de jugar con música. </p>
+        <p>Si no quieres escucharla, puedes desactivarla.</p>
+        <div id="congratulations-message" class="hidden">
+            <h1>¡Felicidades!</h1>
+            <p>Has completado el laberinto.</p>
+        </div>
+
+        <input id="okBtn" type="button" onclick="startGame()" value="Entendido" />
+        <audio id="backgroundMusic" autoplay controls loop>
+            <source src="lab.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <br>
+    <div id="menu">
+      <div class="custom-select">
+        <select id="diffSelect">
+                  <option value="10">Básico</option>
+                  <option value="15">Medio</option>
+                  <option value="25">Difícil</option>
+                  <option value="38">EXTREMO</option>
+              </select>
+      </div>
+      <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Comenzar" />
+    </div>
+
+    <div id="view">
+      <div id="mazeContainer">
+        <canvas id="mazeCanvas" class="border" height="2000" width="2000"></canvas>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--carga la biblioteca jQuery, que simplifica la manipulación del DOM y el manejo de eventos en comparación con JavaScript puro. Permite seleccionar elementos del DOM, manipular su contenido, manejar eventos y realizar animaciones de una manera más sencilla y concisa.-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <!--carga una extensión de jQuery llamada TouchSwipe que agrega funcionalidad para manejar eventos táctiles-->
+  <script src="./script.js"></script>
+
+
+</body>
+</html>
