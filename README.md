@@ -1,5 +1,7 @@
 # JuegoIronhack
 
+https://github.com/ESTHERRODRIGUEZGARCIA/JuegoIronhack.github.io.git
+
 El algoritmo comienza en una celda aleatoria y avanza en una dirección aleatoria hasta que no puede avanzar más. En ese punto, retrocede a la celda anterior y repite el proceso. Este proceso continúa hasta que todas las celdas han sido visitadas, creando así un laberinto conectado.
 
 En el proceso, se van marcando las paredes entre celdas que ya han sido visitadas, creando así un conjunto de pasillos y paredes que forman el laberinto. Este método de generación garantiza un laberinto sin bucles y conectado.
