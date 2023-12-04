@@ -1,6 +1,10 @@
 # JuegoIronhack
 
-https://github.com/ESTHERRODRIGUEZGARCIA/JuegoIronhack.github.io.git
+Click [aquí](https://github.com/ESTHERRODRIGUEZGARCIA/JuegoIronhack.github.io.git) para ver el enlace del repositorio.
+
+Trabajo hecho por:
+1. [Esther Rodríguez García](https://github.com/ESTHERRODRIGUEZGARCIA)
+
 
 El algoritmo comienza en una celda aleatoria y avanza en una dirección aleatoria hasta que no puede avanzar más. En ese punto, retrocede a la celda anterior y repite el proceso. Este proceso continúa hasta que todas las celdas han sido visitadas, creando así un laberinto conectado.
 
